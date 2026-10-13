@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmedsaiedhawash.github.io/marwan-portfolio/sitemap.xml

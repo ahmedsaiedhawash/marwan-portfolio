@@ -1,0 +1,100 @@
+{
+    "name": "Marwan Mohamed Gomaa — Head Barista",
+    "short_name": "Marwan Gomaa",
+    "description": "Head Barista & Coffee Specialist — Specialty Coffee, Latte Art, and Team Leadership. Available for opportunities in the Gulf region.",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "display_override": [
+        "standalone",
+        "minimal-ui",
+        "browser"
+    ],
+    "orientation": "portrait-primary",
+    "background_color": "#fdfaf6",
+    "theme_color": "#6F4E37",
+    "lang": "en",
+    "dir": "ltr",
+    "categories": [
+        "business",
+        "food",
+        "lifestyle"
+    ],
+    "id": "/marwan-portfolio/",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/screenshot-mobile.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Mobile view — Marwan Mohamed Gomaa Portfolio"
+        },
+        {
+            "src": "images/screenshot-desktop.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Desktop view — Marwan Mohamed Gomaa Portfolio"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "View CV",
+            "short_name": "CV",
+            "description": "Open the Curriculum Vitae",
+            "url": "./cv/Marwan-Mohamed-Gomaa-CV.pdf",
+            "icons": [
+                {
+                    "src": "images/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Contact via WhatsApp",
+            "short_name": "Contact",
+            "description": "Get in touch via WhatsApp",
+            "url": "https://wa.me/201275443283",
+            "icons": [
+                {
+                    "src": "images/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "related_applications": [],
+    "protocol_handlers": [],
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    }
+}

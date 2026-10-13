@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- ================= ENGLISH VERSION (Homepage) ================= -->
+    <url>
+        <loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+
+        <!-- Hreflang Alternatives -->
+        <xhtml:link rel="alternate" hreflang="en" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/ar.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/" />
+
+        <!-- Primary Image (Profile) -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/images/marwan-gomaa.jpg</image:loc>
+            <image:title>Marwan Mohamed Gomaa — Head Barista</image:title>
+            <image:caption>Marwan Mohamed Gomaa, Head Barista & Coffee Specialist</image:caption>
+        </image:image>
+
+        <!-- OG Image -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/images/og-image.png</image:loc>
+            <image:title>Marwan Mohamed Gomaa — Portfolio Banner</image:title>
+            <image:caption>Professional profile banner — Head Barista</image:caption>
+        </image:image>
+    </url>
+
+    <!-- ================= ARABIC VERSION (Homepage) ================= -->
+    <url>
+        <loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/ar.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+
+        <!-- Hreflang Alternatives -->
+        <xhtml:link rel="alternate" hreflang="en" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/ar.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedsaiedhawash.github.io/marwan-portfolio/" />
+
+        <!-- Primary Image (Profile) -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/images/marwan-gomaa.jpg</image:loc>
+            <image:title>مروان محمد جمعة — هيد باريستا</image:title>
+            <image:caption>مروان محمد جمعة، هيد باريستا و Coffee Specialist</image:caption>
+        </image:image>
+
+        <!-- OG Image -->
+        <image:image>
+            <image:loc>https://ahmedsaiedhawash.github.io/marwan-portfolio/images/og-image.png</image:loc>
+            <image:title>مروان محمد جمعة — بانر الموقع</image:title>
+            <image:caption>بانر الملف المهني — هيد باريستا</image:caption>
+        </image:image>
+    </url>
+
+</urlset>

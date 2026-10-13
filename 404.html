@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Page Not Found | Marwan Mohamed Gomaa</title>
+
+    <meta name="description"
+        content="The page you are looking for could not be found. Return to Marwan Mohamed Gomaa's portfolio homepage.">
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="theme-color" content="#6F4E37">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* تنسيقات خاصة بصفحة 404 */
+        .error-404-section {
+            min-height: 75vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .error-code {
+            font-size: clamp(5rem, 15vw, 10rem);
+            line-height: 1;
+            font-weight: 900;
+            letter-spacing: -5px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInDown 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 16px;
+            animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+        }
+
+        .error-description {
+            color: var(--muted);
+            max-width: 520px;
+            margin: 0 auto 35px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+        }
+
+        .error-links {
+            margin-top: 50px;
+            padding-top: 35px;
+            border-top: 1px solid var(--border);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+        }
+
+        .error-links h3 {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .error-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .error-link {
+            padding: 12px 18px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--card-bg);
+            color: var(--text);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .error-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .error-link svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .error-lang-toggle {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 10;
+        }
+
+        html[dir="rtl"] .error-lang-toggle {
+            right: auto;
+            left: 30px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .error-lang-toggle {
+                top: 14px;
+                right: 16px;
+            }
+
+            html[dir="rtl"] .error-lang-toggle {
+                right: auto;
+                left: 16px;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .error-actions .btn {
+                width: 100%;
+            }
+
+            .error-links-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .error-links {
+                padding-top: 25px;
+                margin-top: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- زر تبديل اللغة -->
+    <a href="#" id="langToggleBtn" class="lang-toggle error-lang-toggle" aria-label="Switch language">العربية</a>
+
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Marwan Mohamed Gomaa Home">MG</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="error-404-section">
+            <div class="container">
+
+                <div class="error-code">404</div>
+
+                <h1 class="error-title" id="errorTitle">Page Not Found</h1>
+
+                <p class="error-description" id="errorDescription">
+                    The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+                </p>
+
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary" id="btnHome">
+                        ← Back to Home
+                    </a>
+
+                    <a href="index.html#contact" class="btn btn-secondary" id="btnContact">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="error-links">
+                    <h3 id="quickLinksTitle">Explore The Website</h3>
+
+                    <div class="error-links-grid">
+                        <a href="index.html#about" class="error-link" id="linkAbout">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <span>About</span>
+                        </a>
+
+                        <a href="index.html#career" class="error-link" id="linkCareer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                            <span>Career</span>
+                        </a>
+
+                        <a href="index.html#gallery" class="error-link" id="linkGallery">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span>Gallery</span>
+                        </a>
+
+                        <a href="index.html#skills" class="error-link" id="linkSkills">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <span>Skills</span>
+                        </a>
+
+                        <a href="index.html#cv" class="error-link" id="linkCV">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            <span>CV</span>
+                        </a>
+
+                        <a href="index.html#contact" class="error-link" id="linkContact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="currentYear"></span> <span id="footerName">Marwan Mohamed Gomaa</span></p>
+            <p id="footerTagline">Head Barista • Coffee Specialist</p>
+        </div>
+    </footer>
+
+    <script>
+        // =========================
+        // 404 PAGE — Bilingual Logic
+        // =========================
+
+        (function () {
+            'use strict';
+
+            // السنة الحالية
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // =========================
+            // الترجمة الكاملة
+            // =========================
+            const translations = {
+                en: {
+                    lang: 'en',
+                    dir: 'ltr',
+                    pageTitle: '404 — Page Not Found | Marwan Mohamed Gomaa',
+                    toggleLabel: 'العربية',
+                    errorTitle: 'Page Not Found',
+                    errorDescription: 'The page you\'re looking for doesn\'t exist or has been moved. Let\'s get you back on track.',
+                    btnHome: '← Back to Home',
+                    btnContact: 'Contact Me',
+                    quickLinksTitle: 'Explore The Website',
+                    links: {
+                        about: 'About',
+                        career: 'Career',
+                        gallery: 'Gallery',
+                        skills: 'Skills',
+                        cv: 'CV',
+                        contact: 'Contact'
+                    },
+                    footerName: 'Marwan Mohamed Gomaa',
+                    footerTagline: 'Head Barista • Coffee Specialist'
+                },
+                ar: {
+                    lang: 'ar',
+                    dir: 'rtl',
+                    pageTitle: '404 — الصفحة غير موجودة | مروان محمد جمعة',
+                    toggleLabel: 'English',
+                    errorTitle: 'الصفحة غير موجودة',
+                    errorDescription: 'الصفحة التي تبحث عنها غير موجودة أو تم نقلها. دعنا نعيدك إلى المسار الصحيح.',
+                    btnHome: '→ العودة للرئيسية',
+                    btnContact: 'تواصل معي',
+                    quickLinksTitle: 'تصفّح الموقع',
+                    links: {
+                        about: 'نبذة عني',
+                        career: 'المسيرة المهنية',
+                        gallery: 'معرض الأعمال',
+                        skills: 'المهارات',
+                        cv: 'السيرة الذاتية',
+                        contact: 'تواصل معي'
+                    },
+                    footerName: 'مروان محمد جمعة',
+                    footerTagline: 'هيد باريستا • Coffee Specialist'
+                }
+            };
+
+            // =========================
+            // تحديد اللغة الحالية
+            // =========================
+            function detectLang() {
+                try {
+                    const saved = localStorage.getItem('preferred-lang');
+                    if (saved === 'ar' || saved === 'en') return saved;
+                } catch (e) { }
+
+                const browserLang = (navigator.language || 'en').split('-')[0];
+                return (browserLang === 'ar') ? 'ar' : 'en';
+            }
+
+            let currentLang = detectLang();
+
+            // =========================
+            // تطبيق الترجمة
+            // =========================
+            function applyTranslation(lang) {
+                const t = translations[lang];
+                if (!t) return;
+
+                document.documentElement.lang = t.lang;
+                document.documentElement.dir = t.dir;
+                document.title = t.pageTitle;
+
+                const setText = (id, text) => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = text;
+                };
+
+                setText('errorTitle', t.errorTitle);
+                setText('errorDescription', t.errorDescription);
+                setText('btnHome', t.btnHome);
+                setText('btnContact', t.btnContact);
+                setText('quickLinksTitle', t.quickLinksTitle);
+                setText('footerName', t.footerName);
+                setText('footerTagline', t.footerTagline);
+
+                const linkMap = {
+                    linkAbout: t.links.about,
+                    linkCareer: t.links.career,
+                    linkGallery: t.links.gallery,
+                    linkSkills: t.links.skills,
+                    linkCV: t.links.cv,
+                    linkContact: t.links.contact
+                };
+
+                Object.keys(linkMap).forEach(id => {
+                    const link = document.getElementById(id);
+                    if (link) {
+                        const span = link.querySelector('span');
+                        if (span) span.textContent = linkMap[id];
+                    }
+                });
+
+                const toggleBtn = document.getElementById('langToggleBtn');
+                if (toggleBtn) {
+                    toggleBtn.textContent = t.toggleLabel;
+                    toggleBtn.setAttribute('aria-label', t.toggleLabel);
+                }
+
+                try {
+                    localStorage.setItem('preferred-lang', lang);
+                } catch (e) { }
+            }
+
+            // =========================
+            // تبديل اللغة
+            // =========================
+            const toggleBtn = document.getElementById('langToggleBtn');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentLang = (currentLang === 'en') ? 'ar' : 'en';
+                    applyTranslation(currentLang);
+                });
+            }
+
+            // التطبيق الفوري
+            applyTranslation(currentLang);
+        })();
+    </script>
+
+</body>
+
+</html>
