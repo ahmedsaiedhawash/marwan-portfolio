@@ -1,7 +1,7 @@
 {
     "name": "Marwan Mohamed Gomaa — Head Barista",
     "short_name": "Marwan Gomaa",
-    "description": "Head Barista & Coffee Specialist — Specialty Coffee, Latte Art, and Team Leadership. Available for opportunities in the Gulf region.",
+    "description": "Head Barista & Coffee Specialist — Espresso preparation, Latte Art, and Team Leadership.",
     "start_url": "./",
     "scope": "./",
     "display": "standalone",
@@ -69,7 +69,7 @@
             "name": "View CV",
             "short_name": "CV",
             "description": "Open the Curriculum Vitae",
-            "url": "./cv/marwan-gomma-cv.pdf.pdf",
+            "url": "./cv/marwan-gomma-cv.pdf",
             "icons": [
                 {
                     "src": "images/icon-192.png",

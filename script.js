@@ -3,7 +3,9 @@
 // =========================
 // يعمل هذا الملف مع index.html و ar.html و renderer.js
 // يوفّر: تبديل الثيم، القائمة، شريط التقدم، معرض الصور (Lightbox)،
-//         نموذج التواصل، حفظ اللغة، Service Worker، Smooth Scroll.
+//         حفظ اللغة، Service Worker، Smooth Scroll.
+//
+// ⚠️ ملاحظة: تم إزالة كود نموذج التواصل (Web3Forms) بناءً على طلب التعديل.
 
 (function () {
     'use strict';
@@ -290,94 +292,6 @@
             floatingWhatsapp.style.opacity = '1';
             floatingWhatsapp.style.transform = 'scale(1)';
         }, 1200);
-    }
-
-    // =========================
-    // CONTACT FORM (Web3Forms)
-    // =========================
-    // ملاحظة: يجب الحصول على مفتاح API مجاني من https://web3forms.com/
-    // ثم استبدال REPLACE_WITH_WEB3FORMS_KEY في HTML.
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        const formStatus = document.getElementById('formStatus');
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn ? submitBtn.textContent : 'Send';
-
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Honeypot check (Bot filtering)
-            const honeypot = contactForm.querySelector('input[name="botcheck"]');
-            if (honeypot && honeypot.checked) return;
-
-            // تحقق من مفتاح Web3Forms
-            const accessKeyField = contactForm.querySelector('input[name="access_key"]');
-            if (accessKeyField && accessKeyField.value === 'REPLACE_WITH_WEB3FORMS_KEY') {
-                if (formStatus) {
-                    formStatus.textContent = LANG_TEXT().noKey;
-                    formStatus.className = 'form-status error';
-                }
-                return;
-            }
-
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = LANG_TEXT().sending;
-            }
-            if (formStatus) {
-                formStatus.textContent = '';
-                formStatus.className = 'form-status';
-            }
-
-            try {
-                const formData = new FormData(contactForm);
-                const res = await fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    body: formData
-                });
-                const result = await res.json();
-
-                if (result.success) {
-                    if (formStatus) {
-                        formStatus.textContent = LANG_TEXT().success;
-                        formStatus.classList.add('success');
-                    }
-                    contactForm.reset();
-                } else {
-                    throw new Error(result.message || 'Submission failed');
-                }
-            } catch (err) {
-                console.error('[Contact Form]', err);
-                if (formStatus) {
-                    formStatus.textContent = LANG_TEXT().error;
-                    formStatus.classList.add('error');
-                }
-            } finally {
-                if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalBtnText;
-                }
-            }
-        });
-    }
-
-    // نصوص نموذج التواصل حسب اللغة
-    function LANG_TEXT() {
-        const lang = (document.documentElement.lang || 'en').split('-')[0];
-        if (lang === 'ar') {
-            return {
-                sending: 'جارٍ الإرسال...',
-                success: 'تم إرسال رسالتك بنجاح! سأرد عليك قريباً.',
-                error: 'حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقاً أو التواصل عبر واتساب.',
-                noKey: 'نموذج التواصل غير مُفعّل بعد. يرجى التواصل عبر واتساب.'
-            };
-        }
-        return {
-            sending: 'Sending...',
-            success: 'Your message was sent successfully! I\'ll reply soon.',
-            error: 'Something went wrong. Please try again or contact me via WhatsApp.',
-            noKey: 'Contact form is not yet activated. Please reach out via WhatsApp.'
-        };
     }
 
     // =========================

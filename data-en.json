@@ -3,8 +3,8 @@
         "lang": "en",
         "dir": "ltr",
         "title": "Marwan Mohamed Gomaa | Head Barista | Coffee Specialist",
-        "description": "Marwan Mohamed Gomaa — Head Barista with 10+ years of experience in specialty coffee, Latte Art, and team leadership. Available for opportunities in the Gulf region (Saudi Arabia, UAE, Qatar, Kuwait).",
-        "keywords": "Marwan Mohamed Gomaa, Head Barista, Coffee Specialist, Barista Gulf, Barista Saudi Arabia, Barista Dubai, Barista Qatar, Barista Kuwait, Latte Art, Specialty Coffee, Coffee Jobs Middle East",
+        "description": "Marwan Mohamed Gomaa — Head Barista with 10+ years of experience in espresso preparation, Latte Art, and team leadership.",
+        "keywords": "Marwan Mohamed Gomaa, Head Barista, Barista, Espresso, Latte Art, Hot Beverages, Cold Beverages, Team Leadership, Customer Service, Coffee Specialist",
         "theme_color": "#6F4E37"
     },
     "nav": {
@@ -21,11 +21,11 @@
         "switch_lang_label": "Switch to Arabic"
     },
     "hero": {
-        "eyebrow": "COFFEE SPECIALIST • LATTE ART • TEAM LEADERSHIP",
+        "eyebrow": "ESPRESSO • LATTE ART • TEAM LEADERSHIP",
         "name_line1": "Marwan Mohamed",
         "name_line2": "Gomaa",
         "title": "Head Barista | Coffee Specialist",
-        "description": "10+ years of experience crafting specialty coffee, mastering Latte Art, and leading teams in top-tier cafés. I focus on elevating customer satisfaction and applying the highest standards of quality, hygiene, and food safety — ready to relocate to the Gulf region.",
+        "description": "10+ years of experience crafting espresso-based beverages, mastering Latte Art, and leading teams in top cafés. I focus on elevating customer satisfaction and applying the highest standards of quality, hygiene, and food safety.",
         "btn_primary": "Explore My Career",
         "btn_secondary": "View CV",
         "links": {
@@ -34,18 +34,17 @@
         },
         "card": {
             "job_title": "Head Barista",
-            "company": "Halwani Al-Abd",
+            "company": "Espresso & Latte Art Specialist",
             "status": "Currently working"
         }
     },
     "about": {
         "label": "ABOUT ME",
         "title": "Professional Profile",
-        "large_text": "Professional Barista Chef with over 10 years of experience in the specialty coffee industry.",
+        "large_text": "Professional Barista Chef with over 10 years of hands-on experience in espresso preparation and hot & cold beverage crafting.",
         "paragraphs": [
             "I have a proven track record of elevating customer satisfaction by delivering exceptional service characterized by speed, precision, and attention to detail, while fully committing to the highest standards of quality, hygiene, and food safety.",
-            "I bring strong capability in team management, staff training, and maintaining consistent beverage quality, with efficiency in handling work pressure and peak hours — always focused on improving the customer experience and developing overall team performance.",
-            "I am currently seeking new opportunities in the Gulf region (Saudi Arabia, UAE, Qatar, Kuwait) to bring my expertise into a professional new environment."
+            "I bring strong capability in team management, staff training, and maintaining consistent beverage quality, with efficiency in handling work pressure and peak hours — always focused on improving the customer experience and developing overall team performance."
         ],
         "info": [
             {
@@ -58,15 +57,11 @@
             },
             {
                 "label": "Specialty",
-                "value": "Specialty Coffee • Latte Art • Team Management"
+                "value": "Espresso • Latte Art • Team Management"
             },
             {
                 "label": "Current Location",
                 "value": "Cairo, Egypt"
-            },
-            {
-                "label": "Availability",
-                "value": "Open to relocate to the Gulf"
             }
         ]
     },
@@ -80,7 +75,7 @@
                 "company": "Halwani Al-Abd",
                 "tags": [
                     "Team Management",
-                    "Specialty Coffee",
+                    "Espresso Preparation",
                     "Latte Art",
                     "Beverage Quality"
                 ],
@@ -116,7 +111,7 @@
                     "Beverage Preparation",
                     "Customer Service"
                 ],
-                "description": "Prepared specialty coffee and cold beverages, focusing on a fast and exceptional customer experience."
+                "description": "Prepared espresso-based drinks and cold beverages, focusing on a fast and exceptional customer experience."
             },
             {
                 "date": "2017 – 2019",
@@ -126,7 +121,7 @@
                     "Beverage Preparation",
                     "Machine Calibration"
                 ],
-                "description": "Mastered all types of coffee and beverages preparation, along with daily espresso machine calibration."
+                "description": "Mastered all types of espresso and beverage preparation, along with daily espresso machine calibration."
             },
             {
                 "date": "2015 – 2017",
@@ -217,7 +212,7 @@
     "contact": {
         "label": "CONTACT",
         "title": "Get In Touch",
-        "subtext": "Feel free to reach out through any of these channels — I'm available for opportunities in the Gulf region.",
+        "subtext": "Feel free to reach out through any of these channels.",
         "items": [
             {
                 "platform": "instagram",
@@ -248,7 +243,7 @@
             "title": "Chat on WhatsApp",
             "description": "Fastest way to reach me — usually reply within minutes.",
             "button": "Open Chat",
-            "href": "https://wa.me/201275443283?text=Hello%20Marwan%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect%20regarding%20a%20job%20opportunity.",
+            "href": "https://wa.me/201275443283?text=Hello%20Marwan%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect.",
             "tooltip": "Chat with me"
         }
     },
