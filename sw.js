@@ -13,7 +13,7 @@
 // ⚠️ ملاحظة: هذا الملف مكتوب ليعمل من subfolder
 // (مثل /marwan-portfolio/) بدون مشاكل — كل المسارات نسبية.
 
-const CACHE_VERSION = 'v1.0.1';
+const CACHE_VERSION = 'v1.0.2';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`;
